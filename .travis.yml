@@ -1,3 +1,14 @@
 language: node_js
 node_js:
 - node
+##  travis encrypt --pro -add deploy.api_key 
+deploy:
+  provider: npm
+  api_key: 
+    secure: VerZSevIK6OxH1khaGSlCPVvVsf/hS/BStXgPWt7OsW8+Gl5GU+aOYsxiTsLM0vuUPWEg9s7/v8LCluGfIp7X1WRvWpBjvxXolkMv0+It9+7ATXbHedK37pKBy3Ck1DWeg4Tk/4G+W9NkSECcg5aGsUJk4HkhLjVVfnWNoTPgz9qSzT+9IQTE3cwzpxLXn/E+AstIKLwjK9pA6hXfzXbl3Xj+Fz0srsRTPNRCL/mSbxDBuDqfbCqogGetokp3FdCHwC/R6sL6etA68BJt5CTsDd5qmOUtfjq7hUPyNbNAz32yLE5vS6HO8xbu8xUCgP2eeu004Fr0O4cOqbWH7tJiQJZ33bfCzUgv9Rja+Mul3u77EF2/fHQynvGcBeJWbwyedIR9O5MZuIe4AVvhfz3TOC3fMhFR7fJg20h/35O986YcFqgiGt29pzSDXmrfqhQs0DZr9gr+3Ggw2V9i9ShWGq/OUh+0b12dUOXDBRxlmIOEtCNaiBFCFIdiCeIfBDg2NAfux+hQZHa5sd1qK/N5P9qMCfhs/96aRM0anPtN4ZrGGoxOZVXetE/LFHTOZSHyXbC8FQygVv1es07EnKdAzvT3Br4d6B99YbUQ5sN9RxVUF7gMRGUPL283GlInvrj2Zs3IGWA0ls2IcUtD0/Nk4zybNoKjCZ227Z9q78qWnk=
+  email: 505575121@qq.com
+  skip_cleanup: true
+  on:
+    tags: true
+
+
